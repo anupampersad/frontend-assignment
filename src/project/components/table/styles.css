@@ -1,0 +1,37 @@
+.table {
+    border-radius: 0.5rem;
+    background: white;
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 2rem;
+    border: 1px solid #f0f2f2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+tr {
+    text-align: center;
+}
+
+.table-row {
+    background-color: var(--background);
+}
+
+.cell {
+    padding: 1rem;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .table {
+        width: 50%;
+        margin-top: 2rem
+    }
+
+    .cell {
+        padding: 1.25rem;
+        font-size: 14px;
+    }
+
+}
