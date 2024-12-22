@@ -37,7 +37,7 @@ export const useGetProjectData = () => {
       const activeProjects = getProjectsToBeRendered();
       setProjectsToBeRendered(activeProjects);
     }
-  }, [activePage, projects?.length]);
+  }, [activePage, projects?.length]); // eslint-disable-line
 
   return { projects: projectsToBeRendered, pages, activePage, setActivePage };
 };
