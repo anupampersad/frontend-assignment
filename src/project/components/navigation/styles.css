@@ -1,66 +1,58 @@
 .navigation {
-    border-radius: 2rem;
-    background: white;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    font-size: 0.75rem;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: 50%;
     bottom: 1rem;
     transform: translateX(-50%);
-
+    gap: 0.75rem;
+    width: 80%
 }
 
-.navigation:hover {
+.navTab {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    width: 20px;
+    background: var(--tab-background-color);
+    color: var(--tab-font-color);
+    border-radius: 0.5rem;
+    text-align: center;
     cursor: pointer;
-    font-size: 1rem;
 }
 
-.navigation-cell {
-    height: 1rem;
-    width: 1rem;
-    color: var(--font-color);
-    text-decoration: var(--text-decoration);
+.navTab:hover {
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 20%);
 }
 
-.navigation-cell:hover {
-    font-size: 1.25rem;
-    font-weight: 600;
+.backNextTab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 8px;
+    cursor: pointer;
+    color: var(--nav-tab-color);
+    font-size: 0.75rem;
 }
 
 @media screen and (min-width: 768px) {
 
     .navigation {
-        border-radius: 2rem;
-        background: white;
-        display: flex;
-        flex-direction: row;
         gap: 1rem;
+        width: 100%
+    }
+
+    .navTab {
         font-size: 1rem;
-        padding: 1rem;
-        position: absolute;
-        left: 50%;
-        bottom: 1rem;
-        transform: translateX(-50%);
-
+        width: 24px;
     }
 
-    .navigation:hover {
-        cursor: pointer;
-        font-size: 1.25rem;
+    .backNextTab {
+        font-size: 1rem;
     }
+    
 
-    .navigation-cell {
-        height: 1.5rem;
-        width: 1.5rem;
-        color: var(--font-color);
-        text-decoration: var(--text-decoration);
-    }
-
-    .navigation-cell:hover {
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
 }
