@@ -6,7 +6,7 @@ export const useGetProjectData = () => {
   const [pages, setPages] = useState([]);
   const [activePage, setActivePage] = useState(1);
 
-  const projectsToRenderInPage = 10;
+  const projectsToRenderInPage = 5;
 
   const getProjectsToBeRendered = () => {
     const start = (activePage - 1) * projectsToRenderInPage;
