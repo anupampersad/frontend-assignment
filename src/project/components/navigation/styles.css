@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     width: max-content;
-    gap: 8px;
+    gap: 2px;
     cursor: pointer;
     color: var(--nav-tab-color);
     font-size: 0.75rem;
